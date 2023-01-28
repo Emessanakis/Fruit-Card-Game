@@ -1,0 +1,221 @@
+body {
+  background-color: rgba(78, 78, 78, 0.712);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrapper { 
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  background-image: url(/img/login-Img/2.jpg);
+  margin: 6vh 5vw 6vh 5vw;
+  padding: 5vh 0vw 5vh 0vw;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+
+#overley-text-st-gm {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#overley-text-st-gm{
+  animation: overley 2s forwards;
+  display: flex;
+}
+
+@keyframes overley {
+  from  {
+    background-color: rgba(0,0,0,0);
+    font-size: 0;
+  }
+  to {
+    font-size: 7em;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.time-container {
+  position: absolute;
+  font-size: 33px;
+  font-weight: bolder;
+  margin-left: 5vw;
+  margin-top: .5vh;
+  color: rgb(255, 255, 255); 
+  background-color: rgba(78, 78, 78, 0.712);
+  border-radius: 10px;
+  width: 15rem;
+  height: 2.3rem;
+  text-align: center;
+}
+
+.flip-container {
+  position: absolute;
+  font-size: 33px;
+  font-weight: bolder;
+  margin-left: 550px;
+  margin-top: .5vh;
+  color: rgb(255, 255, 255); 
+  background-color: rgba(78, 78, 78, 0.712);
+  border-radius: 10px;
+  width: 15rem;
+  height: 2.3rem;
+  text-align: center;
+}
+
+.grid-container-cards {
+  position: relative;
+  display: grid;
+  background-image: url(/img/bg-card.jpg);
+  grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+  padding: 6vh;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 1rem;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+
+
+img  {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 15vh;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+#btn {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 15.5vh;
+  border-radius: 20px;
+  background-color: rgb(199, 199, 199);
+  box-shadow: 0px 0px 20px 0px #000;
+}
+
+#btn:hover {
+  -webkit-transform:  rotateY(180deg);
+  cursor: pointer;
+}
+
+#overley-text-time-pop {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#overley-text-time-pop {
+  animation: overley 2s forwards;
+  display: flex;
+}
+
+#overley-text-flip-pop {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#overley-text-flip-pop {
+  animation: overley 2s forwards;
+  display: flex;
+}
+
+
+span {
+  display: flex;
+  position: fixed;
+  margin-top: 12rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-cont {
+  position: relative;
+  display: grid;
+  margin-right: 5vw;
+  padding: 1vh;
+  width: 15vw;
+  background-image: url(/img/login-Img/2.jpg);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #000;
+  justify-content: center;
+}
+
+.account-pic {
+  position: relative;
+  background-color: rgba(158, 255, 255, 0.452);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+  margin-top: 3vh;
+  width: 10vw;
+  height: 30vh;
+}
+
+.account-name {
+  position: relative;
+  background-color: rgba(175, 166, 255, 0.157);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+  width: 10vw;
+  height: 5vh;
+  margin-bottom: 19rem;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    font-size: 3px;
+    grid-template-columns: auto;
+  }
+  
+  .account-pic, .left-cont, .account-name {
+    display: none;
+  }
+  .grid-container-cards {
+    width: 40vw;
+    grid-template-columns: auto auto auto;
+  }
+  #btn {
+    width: 13vw;
+    margin-top: 1rem;
+  }
+  .flip-container {
+    width: 15vw;
+    font-size: 15px;
+    height: 2rem;
+    margin-left: 28 vw;
+    margin-top: 1vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .time-container {
+    margin-top: 1vh;
+    width: 15vw;
+    height: 2rem;
+    font-size: 15px;
+    line-height: 1;
+  }
+}
